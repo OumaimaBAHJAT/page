@@ -1,0 +1,25 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.para {
+  color: orangered;
+
+  background-color: indigo;
+
+  font-size: 20px;
+
+  font-style: italic;
+}
+
+.technos {
+  font-family: "Roboto", sans-serif;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+.tech-title {
+  text-decoration: underline;
+}
