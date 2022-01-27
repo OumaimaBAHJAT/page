@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+    <link rel="stylesheet" href="Formulaire.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand-logo">
+        <a href="#"
+          ><img
+            src="https://zupimages.net/up/22/04/qugp.png"
+            alt="Logo Capgemini"
+        /></a>
+      </div>
+
+      <input type="checkbox" id="toggle-btn" />
+      <label for="toggle-btn" class="show-menu-btn"
+        ><i class="fas fa-bars"></i
+      ></label>
+
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="#"><i class="fas fa-house-damage"></i> Accueil</a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-image"></i> Nos Stagiaires</a>
+          </li>
+          <label for="toggle-btn" class="hide-menu-btn"
+            ><i class="fas fa-times"></i
+          ></label>
+        </ul>
+      </nav>
+    </header>
+    
+<body>
+<h1>Nous contacter</h1>
+    <form>
+      <div>
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" placeholder="Ex : Dupont" />
+        <p id="err_nom"></p>
+      </div>
+      <div>
+        <label for="prenom">Votre prénom</label>
+        <input type="text" id="prenom" placeholder="Ex : Jean" />
+        <p id="err_prenom"></p>
+      </div>
+      <div>
+        <label for="email">Votre email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Ex : jeandupont@gmail.com"
+        />
+        <p id="err_email"></p>
+      </div>
+      <div>
+        <label for="etudes">Etudes réalisées</label>
+        <select id="etudes">
+          <option>--Veuillez choisir un cursus--</option>
+          <option value="biologie">Biologie</option>
+          <option value="math">Mathématiques</option>
+          <option value="phy">Physique</option>
+          <option value="info">Informatique</option>
+          <option value="Autre">Autre</option>
+        </select>
+        <p id="err_etudes"></p>
+      </div>
+       <div>
+        <label for="bio">Bio</label>
+        <textarea id="bio" placeholder="Votre bio"></textarea>
+        <p id="err_bio"></p>
+        </select>
+      </div>
+      <input id="btnSubmit" type="submit"  value="Ajouter">
+    </form>
+
+  <body class="body">
+    <main>
+        
+<div class="conteneur-grid3">
+  <div class="item2"><h3>Nos adresses</h3><br>
+<p><li>Salim : Salim@gmail.com</li>
+  <li>Merwan : Merwan@gmail.com</li>
+  <li>Oumaima : Oumaima@yahoo.fr</li>
+  <p>
+
+  </div>
+  <div class="item2"><h3>S'incrire à la newsletter</h3>
+     <input type="email" placeholder="Votre adresse email" /><button
+          class="btn btn-primary btn-sm"
+        >
+          S'inscrire
+        </button>
+          <br /><br />
+    <h2>Liste des Stagiaires</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <!-- <th>#</th> -->
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="listedesstagiaires"></tbody>
+    </table>
+</div>
+        
+    </main>
+    <script src="Formulaire.js"></script>
+  </body>
+</html>
