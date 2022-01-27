@@ -1,0 +1,82 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+margin: 0;
+  padding: 0px;
+  
+  background-color:#ddd ;
+  
+}
+.conteneur-grid {
+  display: grid;
+  margin: 14px;
+  grid-auto-rows: 300px ;
+  
+  
+}
+.conteneur-grid > div {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.conteneur-grid2 {
+  display: grid;
+  
+  grid-gap: 0.2px;
+grid-auto-rows: 180px 200px 150px 100px;
+  grid-template-areas:
+    "trois trois quatre quatre"
+    "trois trois cinq cinq"
+    "six six six six";
+}
+
+.item:nth-child(1) {
+  grid-area: trois;
+}
+.item:nth-child(2) {
+  grid-area: quatre;
+  padding: 7%;
+}
+.item:nth-child(3) {
+  grid-area: cinq;
+}
+.item:nth-child(4) {
+  grid-area: six;
+}
+
+.conteneur-grid2 > div {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+  .conteneur-grid3 {
+  display: grid;
+  
+  grid-gap: 0.5px;
+
+  grid-template-areas:
+    "sept sept huit huit";
+    
+}
+
+.item2:nth-child(1) {
+  grid-area: sept;
+}
+.item2:nth-child(2) {
+  grid-area: huit;
+  padding: 7%;
+}
+
+
+
+.conteneur-grid3 > div {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 10px;
+}
